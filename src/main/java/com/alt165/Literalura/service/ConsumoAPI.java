@@ -7,7 +7,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 /**
- * Esta clase provee un método para consumir datos desde una URL especificada.
+ * Esta clase provee una función para consumir datos desde una URL especificada.
  * Usa un cliente HTTP para enviar un GET a la URL especificada y devuelve
  * el cuerpo de la respuesta como string.
  */

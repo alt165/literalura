@@ -14,10 +14,10 @@ import java.util.List;
  * @param cantidadDeDescargas cantidad de descargas del libro.
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record LibroRecord(
+public record DatosLibro(
         @JsonAlias("id") int id,
         @JsonAlias("title") String titulo,
-        @JsonAlias("authors") List<Autor> autores,
+        @JsonAlias("authors") List<DatosAutor> autores,
         @JsonAlias("languages") List<String> idiomas,
         @JsonAlias("download_count") int cantidadDeDescargas
 ) {

@@ -22,6 +22,15 @@ public class ConsultaAPI {
     }
 
     /**
+     * Busca en la api los datos sin tratar el texto pasado como parametro asumiendo que los datos que vienen de la API
+     * son correctos.
+     * @param siguiente la pagina a buscar.
+     * @return un String con la respuesta obtenida.
+     */
+    public String buscaSiguiente(String siguiente) {
+        return consumoAPI.obtenerDatos(siguiente);
+    }
+    /**
      * Prepara el String para que se pueda pasar a la API en el formato que acepta elimina los espacios al principio y
      * fin de la cadena, convierte a minusculas y reemplaza los espacios entre palabras por la cadena "%20".
      * @param texto la cadena a procesar.
