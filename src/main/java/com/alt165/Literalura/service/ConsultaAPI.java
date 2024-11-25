@@ -9,7 +9,7 @@ public class ConsultaAPI {
     /**
      * Clase que busca los datos de la API usando los métodos de la clase ConsumoAPI.
      * */
-    private ConsumoAPI consumoAPI = new ConsumoAPI();
+    private final ConsumoAPI consumoAPI = new ConsumoAPI();
 
     /**
      * Busca en la API los libros que contengan en su título y/o nombre del autor los datos pasados por parametro.

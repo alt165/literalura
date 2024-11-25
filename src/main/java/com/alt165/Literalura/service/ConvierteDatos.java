@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * elegido
  */
 public class ConvierteDatos implements IConvierteDatos{
-    private ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     /**
      * Convierte la información JSON al objeto del tipo especificado.
