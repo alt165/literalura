@@ -7,7 +7,7 @@ package com.alt165.Literalura.service;
 public class ConsultaAPI {
 
     /**
-     * Clase que busca los datos de la API.
+     * Clase que busca los datos de la API usando los métodos de la clase ConsumoAPI.
      * */
     private ConsumoAPI consumoAPI = new ConsumoAPI();
 
@@ -15,7 +15,6 @@ public class ConsultaAPI {
      * Busca en la API los libros que contengan en su título y/o nombre del autor los datos pasados por parametro.
      * @param textoABuscar el dato a buscar.
      * @return un String con la respuesta obtenida
-     * TODO convertir el formato de la respuesta a Json
      */
     public String obtieneRespuestaAPI(String textoABuscar) {
         String textoLimpio = limpiarTexto(textoABuscar);
