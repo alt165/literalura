@@ -8,7 +8,6 @@ import java.net.http.HttpResponse;
 
 /**
  * Esta clase provee un metodo para consumit datos desde una URL especificada.
- *
  * Usa un cliente HTTP para enviar un GET la la URL especificada y devuelve
  * el cuerpo de la respuesta como string.
  */
@@ -25,17 +24,14 @@ public class ConsumoAPI {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
                 .build();
-        HttpResponse<String> response = null;
+        HttpResponse<String> response;
+        response = null;
         try {
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (InterruptedException e) {
+        } catch (IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
-
-        String json = response.body();
-        return json;
+        return response.body();
     }
 }

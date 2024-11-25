@@ -14,7 +14,7 @@ public class LiteraluraApplication implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         Principal principal = new Principal();
         principal.muestraRespuesta();
 
